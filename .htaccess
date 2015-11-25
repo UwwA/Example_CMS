@@ -1,0 +1,9 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteBase /experimental/
+RewriteRule \.(css|js|png|jpg|gif)$ - [L]
+RewriteRule    ^$    index.php?id=0   [QSA,L]    #redirect to index
+RewriteRule    ^index$    index.php?id=0   [QSA,L]    #redirect to index 
+RewriteRule    ^index/([0-9]+)$    index.php?id=$1    [QSA,L]    # 
+RewriteRule    ^addmenu    add.php?item=menu    [QSA,L]    # 
+RewriteRule    ^addcategory    add.php?item=cat    [QSA,L]    # 
+RewriteRule    ^index/([0-9]+)/([0-9]+)$   index.php?id=$1&item=$2   [QSA,L]    #redirect to index 
