@@ -1,5 +1,5 @@
-body{  min-height:100%;
-
+body{  
+min-height:100%;
 margin:0px;
 padding:0px;
 width:100%;
@@ -7,20 +7,23 @@ background-color:#DADADB;
 }
 
 h1{
-	vertical-align: middle;
-	color: red;		
+		
 	font-size: 21px;
 	letter-spacing: 1px;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
 	padding-top:12;
 	margin:0;
+	padding-left:5px;
+}
+h1.topmenu{
+	vertical-align: middle;
 	text-align: center;
 }
-
 p{
 	padding-left:5px;
 	font-family: 'Work Sans', sans-serif;
+	padding-right:5px;
 }
 p.menutext{
 	font-size: 25px;
@@ -99,7 +102,7 @@ p.itemtext{
   border-color: #d82;
 }
 .success{
-  background-color: #8d5;
+  background-color: #8AC007;
   border-color: #6b3;
 }
 .error {
@@ -113,12 +116,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.form-style-2{
+.form-style{
     max-width: 500px;
     padding: 20px 12px 10px 20px;
     font: 13px Arial, Helvetica, sans-serif;
 }
-.form-style-2-heading{
+.form-style-heading{
     font-weight: bold;
     font-style: italic;
     border-bottom: 2px solid black;
@@ -126,49 +129,49 @@ a:hover {
     font-size: 15px;
     padding-bottom: 3px;
 }
-.form-style-2 label{
+.form-style label{
     display: block;
     margin: 0px 0px 15px 0px;
 }
-.form-style-2 label > span{
+.form-style label > span{
     width: 100px;
     font-weight: bold;
     float: left;
     padding-top: 8px;
     padding-right: 5px;
 }
-.form-style-2 span.required{
+.form-style span.required{
     color:red;
 }
-.form-style-2 .tel-number-field{
+.form-style .tel-number-field{
     width: 40px;
     text-align: center;
 }
-.form-style-2 input.input-field{
+.form-style input.input-field{
     width: 48%;
     
 }
 
-.form-style-2 input.input-field, 
-.form-style-2 .textarea-field, 
- .form-style-2 .select-field{
+.form-style input.input-field, 
+.form-style .textarea-field, 
+ .form-style .select-field{
     box-sizing: border-box;
     border: 2px solid #C2C2C2;
     box-shadow: 2px 2px 4px #EBEBEB;
     padding: 7px;
     outline: none;
 }
-.form-style-2 .input-field:focus, 
-.form-style-2 .textarea-field:focus,  
-.form-style-2 .select-field:focus{
+.form-style .input-field:focus, 
+.form-style .textarea-field:focus,  
+.form-style .select-field:focus{
     border: 2px solid #0C0;
 }
-.form-style-2 .textarea-field{
+.form-style .textarea-field{
     height:100px;
     width: 55%;
 }
-.form-style-2 input[type=submit],
-.form-style-2 input[type=button]{
+.form-style input[type=submit],
+.form-style input[type=button]{
     border: none;
     padding: 8px 15px 8px 15px;
     background: #8AC007;
@@ -180,8 +183,8 @@ a:hover {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
 }
-.form-style-2 input[type=submit]:hover,
-.form-style-2 input[type=button]:hover{
+.form-style input[type=submit]:hover,
+.form-style input[type=button]:hover{
     background: #EA7B00;
     color: #fff;
 }

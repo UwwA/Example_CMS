@@ -46,8 +46,7 @@ echo "<div class='content'><p class='text'>";
   <p class='notifText'></p>
 </div></p>
 <?php
-switch($get){
-	case "menu":
+
 		echo "<div class='form-style-2'>
 		<div class='form-style-2-heading'>Add a category to the top menu</div>
 		<form action='' method='post' class='validateForm'>
@@ -74,8 +73,8 @@ switch($get){
 		<label><span>&nbsp;</span><input type='submit' value='Delete' /></label>
 		</form>
 		</div>";
-		break;
-	case "cat":
+		/*
+	
 		if(!isset($_SESSION['categoryName'])){die("Error");}
 		echo "<div class='form-style-2'>
 		<div class='form-style-2-heading'>Add a subcategory for $_SESSION[categoryName]</div>
@@ -103,12 +102,7 @@ switch($get){
 		<label><span>&nbsp;</span><input type='submit' value='Delete' /></label>
 		</form>
 		</div>";
-		break;
-	default:
-		header('HTTP/1.0 403 Forbidden');
-		break;
-	
-	}
+		*/
 ?>	
 
 </form>
